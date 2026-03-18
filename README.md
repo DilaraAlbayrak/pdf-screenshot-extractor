@@ -34,7 +34,7 @@ python process_screenshots.py --denoise --upscale```
 <img width="1536" height="912" alt="image" src="https://github.com/user-attachments/assets/bb1bd7cf-b79e-4c27-92ed-2d4f3fce402c" />
 
 
-- Crop: Trims the image to specified bounding box coordinates. You must adjust the ```min_x```, ```max_x```, ```min_y```, and ```max_y``` variables within the script to align with your monitor's resolution and the exact position of the PDF page.
+- Crop: Trims the image to specified bounding box coordinates. You must adjust the ```min_x```, ```max_x```, ```min_y```, and ```max_y``` variables within the script to align with your monitor's resolution and the exact position of the PDF page _(Above image is just an illustration, I recommend to use "rotate" feature of your PDF Viewer, and capture screenshots horizontally to approximate original document dimensions)_. 
 - Denoise: Applies Non-Local Means Denoising to filter out background artefacts whilst preserving sharp text and table edges.
 - Upscale: Automatically downloads the pre-trained ```FSRCNN_x2.pb``` AI model upon first run and applies a 2x resolution enhancement tailored for clear edges.
 - The final outputs are saved to the ```processed_screenshots``` directory.
